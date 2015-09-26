@@ -13,7 +13,16 @@
  $light-gray:       #737373;
  $soft-blue:        #82C1F6;
  $light-brown:      #97543B;
- 
+ $medium-orange:    #e59400;
+ $burnt-orange:     #cc5500;
+ /*  */
+
+html, body {
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+}
+
 h1, h2, h2, h3, h4, h5, h6 {
   font-family: 'Lora', serif;
   color: $darker-brown;
@@ -26,10 +35,7 @@ p, li {
   color: $darker-brown;
 }
 
-body {
-  padding-bottom: 70px;         
-}
-
+ 
 /* For Header */
 
 h1 {
@@ -38,21 +44,22 @@ h1 {
   display: inline-block;
   float: left;
   a {
-    color: $medium-gray;
-    &:hover {
-      text-decoration: none;
-      color: $light-gray;
-    }
+  color: $burnt-orange;
+  &:hover {
+    color: $medium-orange;
+    text-decoration: none; 
   }
+}  
 }
 ul.nav.navbar-nav.navbar-right {
   margin-top: 40px;
-  margin-right: 0;
+  margin-right: 0px;
   li a {
     font-size: 20px;
-    color: $light-brown;
+    color: $burnt-orange;
   } 
 }
+
 /* For Home Page */
 
 .header-image {
@@ -66,6 +73,45 @@ ul.nav.navbar-nav.navbar-right {
   margin-top: 15px;      
 }
 
+/* For Footer */
 
+footer {
+  height: 60px;
+  width: 100%;
+  background-color: $darker-brown;
+  a {
+    color: $burnt-orange;
+    font-size: 18px;
+    &:hover {
+      color: $medium-orange;
+      text-decoration: none;
+    }
+  }   
+  ul {
+    margin-top: 20px;
+    margin-left: -70px;
+    li {
+      display: inline;
+      list-style-type: none;
+      padding-right: 20px;
+      padding-right: 10px;
+      a {
+        font-family: 'Arimo', sans-serif;
+        font-size: 18px;
+        font-weight: 400;      
+        color: $burnt-orange;       
+        &:hover {
+          color: $medium-orange;
+          text-decoration: none;
+        }
+      } 
+    }
+  }
+  #footer-contact {                
+    margin-top: 20px;
+    margin-right: 80px;
+    float: right
+  } 
+}
 
 
