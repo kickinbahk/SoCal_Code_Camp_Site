@@ -8,8 +8,12 @@
 
 /* Universal */
 
- $darker-brown: #2C1912; 
-
+ $darker-brown:     #2C1912;
+ $medium-gray:      #545454;
+ $light-gray:       #737373;
+ $soft-blue:        #82C1F6;
+ $light-brown:      #97543B;
+ 
 h1, h2, h2, h3, h4, h5, h6 {
   font-family: 'Lora', serif;
   color: $darker-brown;
@@ -29,13 +33,20 @@ h1 {
   padding-left: 15px;
   display: inline-block;
   float: left;
+  a {
+    color: $medium-gray;
+    &:hover {
+      text-decoration: none;
+      color: $light-gray;
+    }
+  }
 }
 ul.nav.navbar-nav.navbar-right {
   margin-top: 40px;
   margin-right: 0;
   li a {
-  font-size: 20px;
-  
+    font-size: 20px;
+    color: $light-brown;
   } 
 }
 /* For Home Page */
