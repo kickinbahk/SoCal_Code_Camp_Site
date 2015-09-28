@@ -1,0 +1,43 @@
+@import "AA_universal";
+
+/* For Footer */
+
+footer {
+  height: 60px;
+  width: 100%;
+  background-color: $darker-brown;
+  a {
+    color: $burnt-orange;
+    font-size: 18px;
+    &:hover {
+      color: $medium-orange;
+      text-decoration: none;
+    }
+  }   
+  ul {
+    margin-top: 20px;
+    margin-left: -70px;
+    li {
+      display: inline;
+      list-style-type: none;
+      padding-right: 20px;
+      padding-right: 10px;
+      a {
+        font-family: 'Arimo', sans-serif;
+        font-size: 18px;
+        font-weight: 400;      
+        color: $burnt-orange;       
+        &:hover {
+          color: $medium-orange;
+          text-decoration: none;
+        }
+      } 
+    }
+  }
+  #footer-contact {                
+    margin-top: 20px;
+    margin-right: 80px;
+    float: right
+  } 
+}
+

@@ -1,0 +1,37 @@
+@import "bootstrap-sprockets";
+@import "bootstrap";
+
+/* for headers */
+@import url(https://fonts.googleapis.com/css?family=Lora:700);
+/* for paragraphs and lists */
+@import url(https://fonts.googleapis.com/css?family=Arimo:400,400italic,700italic,700);
+
+/* Universal */
+
+ $darker-brown:     #2C1912;
+ $medium-gray:      #545454;
+ $light-gray:       #737373;
+ $soft-blue:        #82C1F6;
+ $light-brown:      #97543B;
+ $medium-orange:    #e59400;
+ $burnt-orange:     #cc5500;
+
+html, body {
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+}
+
+h1, h2, h2, h3, h4, h5, h6 {
+  font-family: 'Lora', serif;
+  color: $darker-brown;
+}
+
+p, li {
+  font-family: 'Arimo', sans-serif;
+  font-size: 18px;
+  font-weight: 400;
+  color: $darker-brown;
+}
+
+ 

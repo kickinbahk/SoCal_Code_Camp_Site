@@ -1,0 +1,25 @@
+@import "AA_universal";
+
+/* For Header */
+
+h1 {
+  padding-top: 15px;
+  padding-left: 15px;
+  display: inline-block;
+  float: left;
+  a {
+  color: $burnt-orange;
+  &:hover {
+    color: $medium-orange;
+    text-decoration: none; 
+  }
+}  
+}
+ul.nav.navbar-nav.navbar-right {
+  margin-top: 40px;
+  margin-right: 0px;
+  li a {
+    font-size: 20px;
+    color: $burnt-orange;
+  } 
+}
