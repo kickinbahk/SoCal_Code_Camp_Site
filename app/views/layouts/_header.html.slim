@@ -1,8 +1,9 @@
-nav.navbar.navbar-default.navbar-static-top role="navigation"
+nav.navbar.navbar-static-top role="navigation"
   .container-fluid
     h1 = link_to "SoCal Code Camp", root_path
     .navbar-header
-      button.navbar-toggle type="button" data-toggle="collapse" data-target="#main-nav-collapse"
+      button.navbar-toggle.btn-lg type="button" data-toggle="collapse" data-target="#main-nav-collapse"
+        .glyphicon.glyphicon-menu-hamburger
         .sr-only
           Toggle Navigation
         .icon-bar
@@ -13,7 +14,7 @@ nav.navbar.navbar-default.navbar-static-top role="navigation"
         li = link_to "About", ""
         li = link_to "Sessions", ""
         - if user_signed_in?
-          li = link_to "Sign Out", destroy_user_session_path, method: :delete, class: "btn btn-danger btn-nav sign-out-btn"
+          li = button_to "Sign Out", destroy_user_session_path, method: :delete, class: "btn navbar-btn sign-out-btn"
         - else
           li = link_to "Sign In", new_user_session_path, method: :get
 

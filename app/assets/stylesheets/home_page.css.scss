@@ -3,10 +3,25 @@
 /* For Home Page */
 
 .header-image {
-  img {           
-    display: block;              
-    width: 100%;
+  img {
     height: 450px;
+    display: block;
+    width: 100%;
+    @media (max-width: 800px) {
+      width: 1000px;
+      margin-left: -200px;
+      overflow: hidden;
+    }
+    @media (max-width: 600px) {
+      width: 1000px;
+      margin-left: -350px;
+      overflow: hidden;
+    }    
+    @media (max-width: 500px) {
+      width: 1000px;
+      margin-left: -450px;
+      overflow: hidden;
+    }    
   }
 }
 .well {
