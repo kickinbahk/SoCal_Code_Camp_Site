@@ -7,6 +7,14 @@ html
     meta name="viewport" content="width=device-width, initial-scale=1"    
   body
     == render 'layouts/header'
+
+    - if notice
+      .alert.alert-success
+        = notice
+    - if alert
+      .alert.alert-danger
+        = alert
+    
     == yield
     == render 'layouts/footer'
 
