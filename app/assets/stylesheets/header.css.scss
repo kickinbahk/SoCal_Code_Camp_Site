@@ -8,12 +8,15 @@ h1 {
   display: inline-block;
   float: left;
   a {
-  color: $burnt-orange;
-  &:hover {
-    color: $medium-orange;
-    text-decoration: none; 
+    color: $burnt-orange;
+    &:hover {
+      color: $medium-orange;
+      text-decoration: none; 
+    }
   }
 }  
+.sr-only {
+  color: $burnt-orange;         
 }
 ul.nav.navbar-nav.navbar-right {
   margin-top: 40px;
@@ -21,5 +24,9 @@ ul.nav.navbar-nav.navbar-right {
   li a {
     font-size: 20px;
     color: $burnt-orange;
-  } 
+  }
+  .sign-out-btn {
+    color: white;               
+  }
+  
 }

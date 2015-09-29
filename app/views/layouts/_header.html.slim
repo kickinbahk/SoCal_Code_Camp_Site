@@ -1,11 +1,21 @@
-header      
+nav.navbar.navbar-default.navbar-static-top role="navigation"
   .container-fluid
     h1 = link_to "SoCal Code Camp", root_path
-    nav
+    .navbar-header
+      button.navbar-toggle type="button" data-toggle="collapse" data-target="#main-nav-collapse"
+        .sr-only
+          Toggle Navigation
+        .icon-bar
+        .icon-bar
+        .icon-bar
+    .collapse.navbar-collapse#main-nav-collapse
       ul.nav.navbar-nav.navbar-right
-        li == link_to "About", ""
-        li == link_to "Sessions", ""
-        li == link_to "Log in", ""
+        li = link_to "About", ""
+        li = link_to "Sessions", ""
+        - if user_signed_in?
+          li = link_to "Sign Out", destroy_user_session_path, method: :delete, class: "btn btn-danger btn-nav sign-out-btn"
+        - else
+          li = link_to "Sign In", new_user_session_path, method: :get
 
 
 
